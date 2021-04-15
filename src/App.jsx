@@ -1,29 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DarkThemeToggle from './components/common/DarkThemeToggle';
+import Presentation from './components/landing/Presentation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="w-full h-full bg-white dark:bg-gray-900">
+      <div className="flex flex-col">
+        <div className="fixed right-4 bottom-4">
+          <DarkThemeToggle />
+        </div>
+      </div>
+      <Presentation />
+    </section>
   );
 }
 
