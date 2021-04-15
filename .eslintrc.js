@@ -19,7 +19,9 @@ module.exports = {
     'react',
   ],
   rules: {
+    'global-require': 0,
     'linebreak-style': 0,
     'react/react-in-jsx-scope': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };
